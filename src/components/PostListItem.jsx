@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const PostListItem = () => {
   return (
-    <div className="flex flex-col gap-8 xl:flex-row">
+    <div className="flex flex-col gap-8 mb-12 xl:flex-row">
       {/* image */}
       <div className="md:hidden xl:block xl:w-1/3">
         <Image
@@ -14,7 +14,7 @@ const PostListItem = () => {
         />
       </div>
       {/* details */}
-      <div className="flex flex-col gap-4 lx:w-2/3">
+      <div className="flex flex-col gap-4 xl:w-2/3">
         <Link to="/posts" className="text-4xl font-semibold ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </Link>
