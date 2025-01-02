@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
+import { IKImage } from "imagekitio-react";
+import Image from "./image";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -9,7 +11,13 @@ const Navbar = () => {
     <div className="flex items-center justify-between w-full h-16 md:-20">
       {/* LoGO */}
       <div className="flex items-center gap-4 text-2xl font-bold">
-        <img src="/logo.png" className="w-8 h-8" alt="" />
+        {/* <IKImage
+          urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT}
+          path="/logo-1.png"
+          className="w-8 h-8"
+          alt="Jlogo"
+        /> */}
+        <Image src="logo-1.png" alt="Jlogo" w={32} h={32} />
         <span>Jlog</span>
       </div>
       {/* MOBILE MENU */}
@@ -33,7 +41,7 @@ const Navbar = () => {
           <a href="">Most Popular</a>
           <a href="">About</a>
           <a href="">
-            <button className="px-4 py-2 text-white bg-blue-800 rounded-3xl">
+            <button className="px-4 py-2 text-white bg-green-800 rounded-3xl">
               Login
             </button>
           </a>
@@ -46,7 +54,7 @@ const Navbar = () => {
         <a href="">Most Popular</a>
         <a href="">About</a>
         <a href="">
-          <button className="px-4 py-2 text-white bg-blue-800 rounded-3xl">
+          <button className="px-4 py-2 text-white bg-green-800 rounded-3xl">
             Login
           </button>
         </a>
