@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
-import Image from "./image";
+import Image from "./Image.jsx";
 import { Link } from "react-router-dom";
 import {
   SignedIn,
